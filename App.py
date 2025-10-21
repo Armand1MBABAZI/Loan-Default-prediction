@@ -9,7 +9,7 @@ import pickle
 import streamlit as st
 
 
-with open('C:/Users/user/Desktop/Again/Loan prediction.pkl', 'rb') as file:
+with open('Loan prediction.pkl', 'rb') as file:
     model = pickle.load(file)
 
 
@@ -59,3 +59,4 @@ if st.button("Predict Loan Default Risk"):
     except Exception as e:
         st.error(f"Error making prediction: {str(e)}")
         st.write("Please check if the model is compatible with the input features.")
+
